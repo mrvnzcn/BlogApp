@@ -123,3 +123,5 @@ C:\Users\gs_me\OneDrive\Masaüstü\Patika\aspnetcore-dersleri\BlogApp\BlogApp\bi
 C:\Users\gs_me\OneDrive\Masaüstü\Patika\aspnetcore-dersleri\BlogApp\BlogApp\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
 C:\Users\gs_me\OneDrive\Masaüstü\Patika\aspnetcore-dersleri\BlogApp\BlogApp\obj\Debug\net8.0\BlogApp.RazorAssemblyInfo.cache
 C:\Users\gs_me\OneDrive\Masaüstü\Patika\aspnetcore-dersleri\BlogApp\BlogApp\obj\Debug\net8.0\BlogApp.RazorAssemblyInfo.cs
+C:\Users\gs_me\OneDrive\Masaüstü\Patika\aspnetcore-dersleri\BlogApp\BlogApp\bin\Debug\net8.0\libman.json
+C:\Users\gs_me\OneDrive\Masaüstü\Patika\aspnetcore-dersleri\BlogApp\BlogApp\bin\Debug\net8.0\BlogApp.staticwebassets.runtime.json
