@@ -1,4 +1,5 @@
 @model List<Tag>
+
 <div class="card mb-3">
     <div class="card-header">
         <h5 class="card-title mb-0">Tags</h5>
@@ -8,7 +9,7 @@
             @foreach(var tag in Model)
             {
                 <li class="list-inline-item">
-                    <a class="btn btn-outline-secondary btn-sm">@tag.Text</a>
+                    <a href="/posts/tag/@tag.Url" class="btn btn-outline-secondary btn-sm">@tag.Text</a>
                 </li>
             }
         </ul>
