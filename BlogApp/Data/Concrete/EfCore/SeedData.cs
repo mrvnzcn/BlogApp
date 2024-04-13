@@ -54,7 +54,7 @@ namespace BlogApp.Data.Concrete.EfCore
                             Title = "Php",
                             Content = "php core dersleri",
                             IsActive = true,
-                            Image = "2.jpg",
+                            Image = "2.png",
                             PublishedOn = DateTime.Now.AddDays(-20),
                             Tags = context.Tags.Take(2).ToList(),
                             UserId = 1
