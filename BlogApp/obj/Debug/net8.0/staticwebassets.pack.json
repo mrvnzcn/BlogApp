@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\img\\3.png"
     },
     {
+      "Id": "C:\\Users\\gs_me\\OneDrive\\Masaüstü\\Patika\\aspnetcore-dersleri\\BlogApp\\BlogApp\\wwwroot\\img\\avatar.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar.jpg"
+    },
+    {
       "Id": "C:\\Users\\gs_me\\OneDrive\\Masaüstü\\Patika\\aspnetcore-dersleri\\BlogApp\\BlogApp\\wwwroot\\img\\p1.jpg",
       "PackagePath": "staticwebassets\\img\\p1.jpg"
     },

@@ -41,7 +41,8 @@ namespace BlogApp.Controllers
                         .FirstOrDefaultAsync(p => p.Url == url));
         }
 
-        public IActionResult AddComment(int PostId, string UserName, string Text, string Url)
+        [HttpPost]
+        public JsonResult AddComment(int PostId, string UserName, string Text)
         {
             var entity = new Comment {
                 Text = Text,
@@ -51,8 +52,12 @@ namespace BlogApp.Controllers
             };
             _commentRepository.CreateComment(entity);
 
-            // return Redirect("/posts/details/" + Url);
-            return RedirectToRoute("post_details", new { url = Url});
+            return Json(new {
+                UserName,
+                Text,
+                entity.PublishedOn,
+                entity.User.Image
+            });
             
         }
     }
