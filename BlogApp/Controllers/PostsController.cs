@@ -11,10 +11,13 @@ namespace BlogApp.Controllers
 {
     public class PostsController : Controller
     {
+        private ITagRepository _tagRepository;
         private IPostRepository _postRepository;
         private ICommentRepository _commentRepository;
-        public PostsController(IPostRepository postRepository, ICommentRepository commentRepository)
+        public PostsController(IPostRepository postRepository, ICommentRepository commentRepository, ITagRepository tagRepository)
         {
+        
+            _tagRepository = tagRepository;
             _postRepository = postRepository;
             _commentRepository = commentRepository;
         }
@@ -119,18 +122,22 @@ namespace BlogApp.Controllers
             {
                 return NotFound();
             }
-            var post = _postRepository.Posts.FirstOrDefault(i => i.PostId == id);
+            var post = _postRepository.Posts.Include(i=>i.Tags).FirstOrDefault(i => i.PostId == id);
             if(post == null)
             {
                 return NotFound();
             }
+
+            ViewBag.Tags = _tagRepository.Tags.ToList();
+
             return View(new PostCreateViewModel {
                 PostId = post.PostId,
                 Title = post.Title,
                 Description = post.Description,
                 Content = post.Content,
                 Url = post.Url,
-                IsActive = post.IsActive
+                IsActive = post.IsActive,
+                Tags = post.Tags
             });
         }
 
